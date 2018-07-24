@@ -30,12 +30,16 @@
     <script>
       $(document).ready(function() {
         $("#media").lightGallery({
+          thumbnail: false,
           thumbWidth: 80,
-          controls: true,
+          controls: false,
           loop : false,
           download: true,
-          counter: true,
-          videojs: true
+          counter: false,
+          videojs: true,
+          slideEndAnimation: false,
+          hideBarsDelay: 30,
+          progressBar: false
         });
       });
     </script>
